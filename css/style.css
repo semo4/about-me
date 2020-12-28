@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&display=swap');
+*{
+    padding:10px;
+    margin: 10px;
+}
+body{
+ /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f2f5f6+0,e3eaed+37,c8d7dc+100;Grey+3D+%234 */
+background: rgb(242,245,246); /* Old browsers */
+background: -moz-linear-gradient(45deg, rgba(242,245,246,1) 0%, rgba(227,234,237,1) 37%, rgba(200,215,220,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */background-repeat: no-repeat;
+}
+
+header{
+    border: 2px solid #2B0E9E;
+    padding : 20px;
+    margin: 20px;
+    
+    
+}
+
+nav ul li {
+    
+    display: inline;
+    padding : 10px;
+}
+nav ul li a {
+    color:#27E82B;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color:#E8719C;
+    text-decoration: none;
+}
+h1{
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    
+    border: 2px dotted #E82723;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 10px;
+}
+
+h3{
+    text-align: left;
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Permanent Marker', cursive;
+    border: 2px dotted #A587E8;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 10px;
+}
+
+h4{
+    text-align: left;
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Permanent Marker', cursive;
+    border: 2px dotted #A587E8;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 10px;
+    padding-left: 50px;
+}
+p{
+    font-family: 'Indie Flower', cursive;
+    padding-left: 80px;
+}
+
+ol{
+    font-family: 'Catamaran', sans-serif;
+    padding-left: 50px;
+    list-style-type: square;
+}
