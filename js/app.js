@@ -13,7 +13,9 @@ if (qeustionOne.toLowerCase() === 'y' ||qeustionOne.toLowerCase() === 'yes' ){
 }else if(qeustionOne.toLowerCase() === 'n' ||qeustionOne.toLowerCase() === 'no'){
     //console.log("Yes It's right answer, My favorite programming language is Python");
    alert("Yes It's right answer, My favorite programming language is Python");
-
+}else{
+    //console.log("Please make sure to input yes/no");
+    alert("Please make sure to input yes/no");
 }
 
 var qeustionTwo = prompt(" is red my favorite color?");
@@ -24,6 +26,9 @@ if (qeustionTwo.toLowerCase() === 'y' ||qeustionTwo.toLowerCase() === 'yes' ){
     //console.log("Yes It's right answer, My favorite color is blue");
     alert("Yes It's right answer, My favorite color is blue");
 
+}else{
+    //console.log("Please make sure to input yes/no");
+    alert("Please make sure to input yes/no");
 }
 
 var qeustionThird= prompt("am i know aboout 4 programming language?");
@@ -35,6 +40,9 @@ if (qeustionThird.toLowerCase() === 'y' ||qeustionThird.toLowerCase() === 'yes' 
    // console.log("Yes It's right answer, I know two programming language that android and python");
     alert("Yes It's right answer, I know two programming language that android and python");
 
+}else{
+    //console.log("Please make sure to input yes/no");
+    alert("Please make sure to input yes/no");
 }
 
 
@@ -49,6 +57,9 @@ if (qeustionFour.toLowerCase() === 'y' ||qeustionFour.toLowerCase() === 'yes' ){
    // console.log("No It's wrong answer, I have take ccna course from cisco and take my certified ");
     alert("No It's wrong answer, I have take ccna course from cisco and take my certified ");
 
+}else{
+    //console.log("Please make sure to input yes/no");
+    alert("Please make sure to input yes/no");
 }
 
 
@@ -75,6 +86,11 @@ switch(qeustionFive.toLowerCase())
         //console.log("thank you for your time  ");
         alert("thank you for your time  ");
         break;
+    default:
+        //console.log("Please make sure to input yes/no");
+        alert("Please make sure to input yes/no");
+        break;
+          
 }
 
 
