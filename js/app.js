@@ -82,26 +82,14 @@ var qeustionFive= prompt("have you enjoy with this game?");
 switch(qeustionFive.toLowerCase())
 {
     case 'y':
-        console.log("thank you for your time  ");
-        alert("thank you for your time  ");
-        arrayOfAnswers.push(["qeustionFive ", " Correct Answer"]);
-        totalScore++;
-        break;
-
     case 'yes':
         console.log("thank you for your time  ");
         alert("thank you for your time  ");
         arrayOfAnswers.push(["qeustionFive ", " Correct Answer"]);
         totalScore++;
         break;
-
-    case 'n':
-        console.log("thank you for your time  ");
-        alert("thank you for your time  ");
-        arrayOfAnswers.push(["qeustionFive ", " Wrong Answer"]);
-        break;
-
     case 'no':
+    case 'n':
         console.log("thank you for your time  ");
         alert("thank you for your time  ");
         break;
