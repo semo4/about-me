@@ -8,74 +8,50 @@ alert("let's play aguessing game about me? \n Please answer with yes/no or y/n")
 
 var arrayOfAnswers = [] ;
 
-
 var totalScore = 0;
-
-
 
 var qeustionOne = prompt("is my favorite programming language is java?");
 if (qeustionOne.toLowerCase() === 'y' ||qeustionOne.toLowerCase() === 'yes' ){
-    console.log("No It's wrong answer, My favorite programming language is Python");
-    alert("No It's wrong answer, My favorite programming language is Python");
-    arrayOfAnswers.push(["qeustionOne ", " Wrong Answer"]);
+    var message = "My favorite programming language is Python"
+    alertWrongAswer(message, "qeustionOne");
 }else if(qeustionOne.toLowerCase() === 'n' ||qeustionOne.toLowerCase() === 'no'){
-   console.log("Yes It's right answer, My favorite programming language is Python");
-   alert("Yes It's right answer, My favorite programming language is Python");
-   arrayOfAnswers.push(["qeustionOne ", " Correct Answer"]);
-   totalScore++;
+    alertCorrectAswer(message, "qeustionOne");
 }else{
-    console.log("Please make sure to input yes/no");
-    alert("Please make sure to input yes/no");
+    alertWrongInput()
 }
+
 
 var qeustionTwo = prompt(" is red my favorite color?");
 if (qeustionTwo.toLowerCase() === 'y' ||qeustionTwo.toLowerCase() === 'yes' ){
-    console.log("No It's wrong answer, My favorite color is blue ");
-    alert("No It's wrong answer, My favorite color is blue ");
-    arrayOfAnswers.push(["qeustionTwo ", " Wrong Answer"]);
+    var message = "My favorite color is blue";
+    alertWrongAswer(message, "qeustionTwo");
 }else if(qeustionTwo.toLowerCase() === 'n' ||qeustionTwo.toLowerCase() === 'no'){
-    console.log("Yes It's right answer, My favorite color is blue");
-    alert("Yes It's right answer, My favorite color is blue");
-    arrayOfAnswers.push(["qeustionTwo ", " Correct Answer"]);
-    totalScore++;
+    alertCorrectAswer(message, "qeustionTwo");
 }else{
-    console.log("Please make sure to input yes/no");
-    alert("Please make sure to input yes/no");
+    alertWrongInput()
 }
+
 
 var qeustionThird= prompt("am i know aboout 4 programming language?");
-
 if (qeustionThird.toLowerCase() === 'y' ||qeustionThird.toLowerCase() === 'yes' ){
-    console.log("No It's wrong answer, I know two programming language that android and python ");
-    alert("No It's wrong answer, I know two programming language that android and python ");
-    arrayOfAnswers.push(["qeustionThird ", " Wrong Answer"]);
+    var message = "I know two programming language that android and python";
+    alertWrongAswer(message, "qeustionThird");
 }else if(qeustionThird.toLowerCase() === 'n' ||qeustionThird.toLowerCase() === 'no'){
-    console.log("Yes It's right answer, I know two programming language that android and python");
-    alert("Yes It's right answer, I know two programming language that android and python");
-    arrayOfAnswers.push(["qeustionThird ", " Correct Answer"]);
-    totalScore++;
+    alertCorrectAswer(message, "qeustionThird");
 }else{
-    console.log("Please make sure to input yes/no");
-    alert("Please make sure to input yes/no");
+    alertWrongInput()
 }
-
 
 
 var qeustionFour= prompt("have i take any course in networking ccna?");
 if (qeustionFour.toLowerCase() === 'y' ||qeustionFour.toLowerCase() === 'yes' ){
-    console.log("Yes It's right answer, I have take ccna course from cisco and take my certified ");
-   alert("Yes It's right answer, I have take ccna course from cisco and take my certified ");
-   arrayOfAnswers.push(["qeustionFour ", " Correct Answer"]);
-   totalScore++;
+    var message = "I have take ccna course from cisco and take my certified";
+    alertCorrectAswer(message, "qeustionFour");
 }else if(qeustionFour.toLowerCase() === 'n' ||qeustionFour.toLowerCase() === 'no'){
-    console.log("No It's wrong answer, I have take ccna course from cisco and take my certified ");
-    alert("No It's wrong answer, I have take ccna course from cisco and take my certified ");
-    arrayOfAnswers.push(["qeustionFour ", " Wrong Answer"]);
+    alertWrongAswer(message, "qeustionFour");
 }else{
-    console.log("Please make sure to input yes/no");
-    alert("Please make sure to input yes/no");
+    alertWrongInput()
 }
-
 
 
 var qeustionFive= prompt("have you enjoy with this game?");
@@ -102,17 +78,7 @@ switch(qeustionFive.toLowerCase())
 }
 
 
-
-var answer = "your answered "+ arrayOfAnswers.length +" Question and the answers is : \n ";
-for (var c = 0; c< arrayOfAnswers.length ; c++){
-    answer = answer + arrayOfAnswers[c] +"\n";
-}
-console.log(answer);
-alert( answer);
-
-
-
-
+answerScore();
 
 
 var counter = 4;
@@ -122,7 +88,7 @@ while(i < 4)
 {
 
     var checkAnswer = "";
-    var questionSix = parseInt(prompt("enter guess number between 1 and 50 ? \n you have 4  opportunity to guess the correct number"));
+    var questionSix = parseInt(prompt("enter guess number between 1 and 50 ? \n you have "+ counter+" opportunity to guess the correct number"));
     if(questionSix >=  1  && questionSix < rand){
         console.log('Too Low');
         checkAnswer = checkAnswer + " Too Low \n";
@@ -140,8 +106,7 @@ while(i < 4)
     }
     else if(questionSix === rand){
         console.log('you have the correct answer');
-        checkAnswer = checkAnswer + " you have the correct answer \n";
-        //alert('you have the correct answer');
+        alert('you have the correct answer');
         totalScore++;
         break;
     }
@@ -161,12 +126,13 @@ while(i < 4)
     i++;
 }
 
+
 var correctAnswer = ['golf mk3 gti','bmw e45','shalpy 500gt','eleanor 1969','hellcat','g-class']
 var count = 6;
 var j = 0;
 while(j < 6)
 {
-    var questionSaven =prompt(" guess what is my favorit car ? \n you have 6  opportunity to guess the correct number");
+    var questionSaven =prompt(" guess what is my favorit car ? \n you have "+ count +" opportunity to guess the correct number");
     var checkCarAnswer = "" ;
     if(questionSaven === null){
         console.log('you have did not input any thing ');
@@ -194,8 +160,8 @@ while(j < 6)
         }
          count--;
          if(count !== 0){
-           console.log('');
-          alert(checkCarAnswer + 'you stll have  '+ count + '  opportunity try again');
+           console.log(checkCarAnswer + ' you stll have  '+ count + '  opportunity try again');
+          alert(checkCarAnswer + ' you stll have  '+ count + '  opportunity try again');
          }else{
             console.log('you take all opportunity');
             alert('you take all opportunity');
@@ -219,6 +185,32 @@ while(j < 6)
 }
 
 
+alert("thank you for your time  Mr/Mrs " + name + "\n Your Score is : " + totalScore+" of 7 ");
 
 
-alert("thank you for your time  Mr/Mrs " + name + "\n Your Score is : " + totalScore);
+function alertWrongAswer(message, questionNumber){
+    console.log("No It's wrong answer, " +message );
+    alert("No It's wrong answer, " +message);
+    arrayOfAnswers.push([questionNumber, " Wrong Answer"]);
+}
+
+function alertCorrectAswer(message, questionNumber){
+    console.log("Yes It's right answer, " +message );
+    alert("Yes It's right answer, " +message);
+    arrayOfAnswers.push([questionNumber, " Correct Answer"]);
+    totalScore++;
+}
+
+function alertWrongInput(){
+    console.log("Please make sure to input yes/no or y/n");
+    alert("Please make sure to input yes/no or y/n");
+}
+
+function answerScore(){
+    var answer = "your answered "+ arrayOfAnswers.length +" Question and the answers is : \n ";
+    for (var c = 0; c< arrayOfAnswers.length ; c++){
+        answer = answer + arrayOfAnswers[c] +"\n";
+    }
+    console.log(answer);
+    alert( answer);
+}
