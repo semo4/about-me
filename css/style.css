@@ -112,11 +112,14 @@ img{
     display:block;
     
 }
+.container{
+    height: 1600px;
+}
 
 
-.container-one{
+.container-one,  img{
     padding:25px 20px 20px 20px;
-   float: left;
+   text-align: left;
   
     display: inline-block ;
     margin: 5px;
@@ -179,8 +182,7 @@ img{
 .container-eight{
     padding:25px 20px 20px 20px;
     float: center;
-    
-   
+
     display: inline-block ;
     margin: 5px;
     position: relative;
@@ -202,5 +204,28 @@ img{
     display: inline-block ;
     margin: 5px;
 }
+.footer-title{
+    border: none;
+    text-align: left;
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Permanent Marker', cursive;
+  
+    margin: 20px;
+    padding: 10px;
+}
+.social li{
+    list-style-type: none;
+    display: inline-block;
+}
+.social li a{
+    text-decoration: none;
+    font-size:50px;
+    color: whitesmoke;
+}
 
+footer{
+    padding: 25px;
+    background-color: lightseagreen;
 
+}
