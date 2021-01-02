@@ -133,7 +133,6 @@ function sixthQuestion() {
 
         }
         else if (questionSix === rand) {
-
             alert('you have the correct answer');
             totalScore++;
             break;
