@@ -161,7 +161,7 @@ while(i < 4)
     i++;
 }
 
-var correctAnswer = ['golf mk3 gti','bmw e45','shalpy 500gt','eleanor 1969','hellcat','g-class']
+var correctAnswer = ['golf mk3 gti','bmw e45','shalpy 500gt','eleanor 1969','hellcat','g-class'];
 var count = 6;
 var j = 0;
 while(j < 6)
